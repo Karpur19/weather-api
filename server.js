@@ -3,7 +3,6 @@ const axios = require('axios');
 const bodyParser = require('body-parser');
 
 const app = express();
-const PORT = 3000;
 
 // Middleware
 app.use(bodyParser.json());
@@ -51,5 +50,3 @@ const PORT = process.env.PORT || 3000; // Fallback to 3000 for local development
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
-
-
