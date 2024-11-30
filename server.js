@@ -11,6 +11,12 @@ app.use(bodyParser.json());
 const WEATHER_API_KEY = 'c49499c7b583aa0bae53f99f5a48558c';
 const WEATHER_API_URL = 'https://api.openweathermap.org/data/2.5/weather';
 
+// Root route
+app.get('/', (req, res) => {
+    res.send('Welcome to the Weather API! Use /weather?city=YourCity to get weather information.');
+});
+
+
 // API Endpoint to get weather information
 app.get('/weather', async (req, res) => {
     const city = req.query.city; // City name from query parameter
