@@ -45,8 +45,10 @@ app.get('/weather', async (req, res) => {
 });
 
 // Start the server
-const PORT = process.env.PORT || 3000; // Fallback to 3000 for local development
+// Start the server
+const PORT = process.env.PORT || 3000; // Render will use process.env.PORT, fallback to 3000 if not available
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
+
