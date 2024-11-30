@@ -11,10 +11,19 @@ This is a simple weather API built with Node.js and Express.
 /weather?city=CityName
 
 
-
-
-
 ## Deployment
-- Live URL: [https://weather-api.onrender.com](https://weather-api.onrender.com)
+- Live URL: [Live Weather API](https://weather-api-72az.onrender.com)
+
+### Endpoints:
+
+- **GET `/weather`**: Fetch the weather for a given city.
+  - **Query Parameter**: `city` (e.g., `city=London`)
+  
+  Example: `https://weather-api-72az.onrender.com/weather?city=London`
+
+
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 
